@@ -69,7 +69,7 @@ def reshape_and_normalize(images):
 
 # Apply your function
 training_images = reshape_and_normalize(training_images)
-print('Name: Joyce Beulah R           RegisterNumber: 212222230058        \n')
+print('Name: V NAVEENKUMAR          RegisterNumber: 212221230068      \n')
 print(f"Maximum pixel value after normalization: {np.max(training_images)}\n")
 print(f"Shape of training set after reshaping: {training_images.shape}\n")
 print(f"Shape of one image after reshaping: {training_images[0].shape}")
@@ -124,17 +124,19 @@ def convolutional_model():
 
     return model
 model = convolutional_model()
-training_history = model.fit(training_images, training_labels, epochs=10, callbacks=[EarlyStoppingCallback()])
+training_history = model.fit(training_images, training_labels, epochs=5, callbacks=[EarlyStoppingCallback()])
 
 ```
 ## OUTPUT
 ### Reshape and Normalize output
 
-![image](https://github.com/user-attachments/assets/f024a488-c003-49bb-92e0-7a3514fc475f)
+![Screenshot (43)](https://github.com/user-attachments/assets/bbc1eca2-dae4-492e-a06e-73ce4644e8d2)
+
 
 ### Training the model output
 
-![image](https://github.com/user-attachments/assets/6904b3ae-42ee-4322-89ec-ecb9e2bb10ef)
+![Screenshot (43)](https://github.com/user-attachments/assets/a2b9505b-622a-426f-8d4a-7392387f1dc5)
+
 
 
 ## RESULT
